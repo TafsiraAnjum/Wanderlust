@@ -1,0 +1,23 @@
+<!-- flash alerts for successful request -->
+<%if(success && success.length){%>
+  <div class="row">
+    <div class="col-lg-7 col-md-9 offset-lg-3 offset-md-2">
+      <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
+        <%=success%>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>    
+    </div>
+  </div>
+<%}%>
+
+<!-- flash alerts for error request -->
+<%if(error && error.length){%>
+  <div class="row">
+    <div class="col-lg-7 col-md-9 offset-lg-3 offset-md-2">
+      <div class="alert alert-danger alert-dismissible fade show mt-4" role="alert">
+        <%=error%>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>    
+    </div>
+  </div>
+<%}%>

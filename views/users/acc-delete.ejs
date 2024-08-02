@@ -1,0 +1,31 @@
+<% layout('./boilerplate.ejs') -%>
+
+<body>
+    <div class="row px-2 mt-5">
+        <div class="alert alert-danger d-flex align-item-center" role="alert">
+            <i class="fa-solid fa-triangle-exclamation fs-4"></i> &nbsp;&nbsp;
+            <p>
+                All your listings and reviews will be removed. You will no longer be able to created them again.
+                Are you sure you want to close your account?
+            </p>
+          </div>    
+        <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
+            <h3>Delete My account</h3>
+            <form action="/account-delete" method="post" class="needs-validation mt-4" novalidate>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="username" class="form-control" name="username" id="username" required>
+                    <div class="invalid-feedback">please enter valid username!</div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" required>
+                    <div class="invalid-feedback">please enter valid password!</div>
+                </div>
+                <div class="my-5">
+                    <button class="btn btn-danger" type="submit">Delete Account</button>
+                </div>           
+            </form>
+        </div>
+    </div>
+</body>

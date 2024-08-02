@@ -1,0 +1,108 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+
+.link{
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    margin-right: 1.2rem;
+}
+.link:hover{
+    text-decoration: underline;
+}
+
+.add-btn, .edit-btn{
+    background-color: #fe424d;
+    color: white;
+}
+.add-btn:hover, .edit-btn:hover{
+    background-color: #fe424d;
+    color: white;
+}
+
+/* Navbar */ 
+.navbar{
+    height: auto;
+    background-color: white;
+}
+
+.navbar-brand{
+    color: #fe424d;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.navbar-brand:hover{
+    color: #fe424d;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Footer */
+.f-info{
+    background-color: #ebebeb;
+    color: #222;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.f-info-socials{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+/* Card */
+.card{
+    border: none;
+}
+
+.card-img-top{
+    border-radius: 1rem;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+.card-img-top:hover{
+    opacity: 0.85;
+    background-color: white;
+}
+
+.card-link{
+    text-decoration: none;
+}
+
+/* Show-Page */
+.show-img{
+    height: 35vh;
+    object-fit: cover;
+}
+
+/* searchbar */
+.search-btn{
+    color: white;
+    background-color: #fe424d;
+    display: inline;
+}
+.search-btn:hover{
+    color: white;
+    background-color: #fe424d;
+}
+
+.search-btn i{
+    display: inline;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.search-inp{
+    width: 20rem;
+}

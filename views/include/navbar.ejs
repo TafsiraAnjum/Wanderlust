@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top py-2 px-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <i class="fa-regular fa-compass"></i>Explore
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav ms-auto">
+        <form action="/search" class="d-flex my-2" role="search">
+          <input class="form-control me-2 rounded-pill search-inp" type="search" name="query" placeholder="Search destination" aria-label="Search">
+          <button class="btn search-btn rounded-pill" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>Search
+          </button>
+        </form>
+      </div>
+      <div class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/signup">Add new account</a></li>
+            <li><a class="dropdown-item" href="/login">Add existing account</a></li>
+            <%if(currUser){%>
+            <li><a class="dropdown-item" href="/logout">Logout</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item btn btn-outline-danger" href="/account-delete">Delete Account</a></li>
+            <%}%>
+          </ul>  
+        </li>
+        <a href="/listings/new" class="nav-link">Airbnb your home</a>
+      </div>
+    </div>
+  </div>
+</nav>
